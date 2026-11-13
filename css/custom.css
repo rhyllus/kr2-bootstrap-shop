@@ -1,16 +1,62 @@
 body {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 .placeholder-box {
-  min-height: 240px;
+    min-height: 240px;
 }
 
 .placeholder-image {
-  min-height: 320px;
+    min-height: 320px;
 }
 
 .card-img-top {
-  height: 180px;
-  object-fit: cover;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.news-img-card {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 20px;
+    margin-bottom: 0;
+    width: calc(100% - 40px);
+    height: 250px;
+    background-image: url(../images/tech_news_monitor.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: 0 -30px;
+}
+
+#ooo-agro {
+    background-image: url(../images/ooo-agro.jpg);
+}
+
+#avangard-agro {
+    background-image: url(../images/avangard-agro.png);
+    background-position: -55px -20px;
+}
+
+.news-headline {
+    text-decoration: none;
+    color: #212529;
+}
+
+.news-headline:hover {
+    color: #0d6efd;
+}
+
+.container-fluid--gapped {
+    padding: 45px;
+    padding-top: 0px;
 }
